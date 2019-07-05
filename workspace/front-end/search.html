@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consultar usuários</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="search.css">
+
+  </head>
+
+  <body>
+    
+    <main>
+
+        <div class="img-chart-container">
+          <img src="../../img/user-plus.png" class="img-chart" alt="">
+        </div>
+        <h1>Usuários</h1>
+
+        <form action="">
+
+          <div class="select-form">
+              <label for="search-type">Tipo de busca</label>
+              <select id="search-type" class="select">
+                <option value="name">Nome</option>
+                <option value="email">Email</option>
+              </select>
+          </div>
+
+          <input type="text" id="search" placeholder="Buscar...">
+
+          <div class="submit-form">
+            <button type="submit" class="found-button all">Achar todos</button>
+            <button type="submit" class="found-button">Buscar</button>
+          </div>
+
+        </form>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+
+  </body>
+
+</html>

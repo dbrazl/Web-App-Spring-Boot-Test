@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro Web App com Spring Boot</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+
+  <body>
+    
+    <header>
+      <nav class="nav-bar">
+        <button class="button-menu-mobile">
+          <img src="../../img/modern-menu.png" alt="Menu" class="button-img-menu">
+        </button>
+      </nav>
+    </header>
+
+    <main>
+
+        <p class="p1">Primeiro Web App</p>
+    
+        <div class="row">
+          <p class="p2">com <br></p>
+          <p class="p3">Spring Boot</p>
+        </div>
+        
+        <img src="../../img/Spring boot logo.png" alt="Spring Boot loo" class="logo">
+    
+        <div class="desktop-menu-container">
+            <button class="button" id="tech-button">Tecnologias usadas</button>
+            <button class="button" id="search-button">Consultar usuários</button>
+            <button class="button register-button">Cadastrar usuários</button>
+        </div>
+    
+        <img src="../../img/cauton-dance.gif" alt="Cautton Dance" class="gif">
+
+    </main>
+
+    <!--Modal-->
+    <section class="modal-container">
+
+      <!--Mobile menu-->
+      <div class="modal-menu-mobile">
+
+        <button class="button-menu-mobile return-menu-mobile" id="return-menu-mobile">
+          <img src="../../img/arrow-come-back-2.png" alt="Sair do menu" class="return-img-menu-mobile" id="return-menu-mobile">
+        </button>
+
+        <ul class="mt-120 width-100">
+
+          <li class="item-menu-mobile" id="tech-item">
+            <a href="tech.html">
+              <img src="../../img/chip.png" aria-hidden="true" class="icon-menu-mobile">
+              <p class="ml-5">Tecnologias usadas</p>
+            </a>
+          </li>
+
+          <li class="item-menu-mobile">
+            <a href="search.html">
+              <img src="../../img/user.png" aria-hidden="true" class="icon-menu-mobile">
+              <p class="ml-5">Consultar usuários</p>
+            </a>
+          </li>
+
+          <li class="item-menu-mobile">
+            <button class="button-item-menu register-button">
+              <img src="../../img/user-plus.png" aria-hidden="true" class="icon-menu-mobile">
+              <p class="ml-5">Cadastrar usuários</p>
+            </button>
+
+        </ul>
+
+        <div class="left-hand-checkbox">
+            <input type="checkbox" name="left-hand=checkbox" id="left-hand-checkbox">
+            <label for="left-hand-checkbox">Sou canhoto</label>
+        </div>
+
+      </div>
+
+      <!--Tech`s-->
+      <div class="modal-tech">
+
+        <div class="img-chart-container">
+          <img src="../../img/chip.png" alt="Tecnologias" class="img-chart">
+        </div>
+
+        <section name="tech-list" class="mt-20">
+          <ul>
+
+            <li class="front-end">front-end</li>
+            <hr>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JQuery</li>
+              </ul>
+              
+            <li class="back-end">back-end</li>
+            <hr>
+            <ul>
+              <li>Spring Boot</li>
+              <li>Argon2 Hash</li>
+              <li>Spring Data JPA</li>
+            </ul>
+
+            <li class="infrastructure">infraestrutura</li>
+            <hr>
+            <ul>
+              <li>AWS EC2</li>
+              <li>AWS VPC Network</li>
+            </ul>
+
+            <li class="architecture">arquitetura</li>
+            <hr>
+            <ul>
+              <li>MVC</li>
+              <li>REST API</li>
+            </ul>
+  
+          </ul>
+        </section>
+
+        <button class="close-button" id="close-button">
+          <img src="../../img/times.png" alt="Fechar janela" class="close-img-button" id="close-button">
+        </button>
+
+      </div>
+
+      <!--User Register-->
+      <div class="modal-register">
+
+        <div class="img-chart-container">
+          <img src="../../img/user-plus.png" class="img-chart" alt="">
+        </div>
+
+        <form action="" class="form-register">
+
+          <input type="text" class="input-format" placeholder="Usuário">
+
+          <input type="password" class="input-format" placeholder="Password">
+
+          <input type="email" class="input-format" placeholder="email@email.com">
+
+          <button type="submit" class="button-register">Cadastrar</button>
+
+        </form>
+
+        <button class="close-button" id="close-button">
+          <img src="../../img/times.png" alt="Fechar janela" class="close-img-button" id="close-button">
+        </button>
+
+      </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

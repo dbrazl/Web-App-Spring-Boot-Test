@@ -1,0 +1,406 @@
+.p1{
+  font-size: 36px;
+  color: #b8b8b8;
+}
+
+.p2{
+  font-size: 36px;
+  color: #FFF700;
+}
+
+.p3{
+  font-size: 36px;
+  font-weight: bold;
+  color: #68BD45;
+}
+
+p{
+  margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.gif{
+  width: 200px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+  .gif{
+    width: 150px;
+    height: 225px;
+    margin-top: 20px;
+  }
+}
+
+body, main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.button{
+  margin: 20px 20px;
+  height: 36px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  cursor: pointer;
+  display: none;
+}
+
+.button:hover{
+  background-color: #eee;
+  border: none;
+}
+
+.button-register{
+  margin-top: 60px;
+  height: 36px;
+  width: 165px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  cursor: pointer;
+}
+
+.button-register:hover{
+  color: #fff;
+  background-color: #238bf7;
+  border: none;
+}
+
+@media(min-width: 768px) {
+  .button{
+    display: block;
+  }
+} 
+
+.nav-bar{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.button-menu-mobile{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+/*
+@media(min-width: 768px) {
+  .button-menu-mobile{
+    display: none;
+  }
+}*/
+
+.button-img-menu{
+  width: 36px;
+  height: 19.8px;
+}
+
+.modal-container{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.20);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-tech{
+  background-color: #fff;
+  padding: 20px 20px 0px 20px;
+  width: 300px;
+  height: 650px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  position: relative;
+  opacity: 0;
+  top: -60px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-container.open-modal{
+  display: flex;
+}
+
+.modal-tech.open-modal {
+  display: flex;
+}
+
+.modal-menu-mobile{
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+}
+
+.modal-menu-mobile.open-modal{
+  display: flex;
+}
+
+.return-menu-mobile{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.return-img-menu-mobile{
+  width: 36px;
+  height: 36px;
+}
+
+ul{
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-bottom: 35px;
+  width: 200px;
+}
+
+li{
+  text-align: center;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.front-end{
+  color: #238bf7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-end{
+  color: #f5443eff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.infrastructure{
+  color: #5fd38d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.architecture{
+  color: #242f41;
+  font-weight: bold;
+  text-align: center;
+}
+
+.close-button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  right: -25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff; 
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-img-button{
+  width: 36px;
+  height: 36px;
+}
+
+.img-chart-container{
+  border: 2px solid #000;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-chart{
+  width: 60px;
+  height: 60px;
+}
+
+.icon-menu-mobile{
+  width: 20px;
+  height: 20px;
+}
+
+.item-menu-mobile{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-menu-mobile:hover{
+  background-color: #eee;
+}
+
+.mt-120{
+  margin-top: 120px;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.ml-5{
+  margin-left: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+}
+
+.left-hand-checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+}
+
+.return-to-main-page{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: none;
+}
+
+.return-to-main-page-img{
+  width: 36px;
+  height: 36px;
+}
+
+@media(max-height: 800px) {
+  .margin-responsive-tech-page{
+    margin-top: 100px;
+  }
+}
+
+@media(max-height: 650px) {
+  .margin-responsive-tech-page{
+    margin-top: 200px;
+  }
+}
+
+.modal-register{
+  width: 280px;
+  height: 455px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  top: -60px; 
+}
+
+.modal-register.open-modal{
+  display: flex;
+}
+
+.button-item-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none; 
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+.form-register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.input-format{
+  background-color: #fff;
+  margin-top: 30px;
+  border-width: 0 0 1px 0;
+  border-color: #000;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+::placeholder{
+  color: #000;
+}
+
+.desktop-menu-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+input:focus{
+  color: #238bf7;
+}
